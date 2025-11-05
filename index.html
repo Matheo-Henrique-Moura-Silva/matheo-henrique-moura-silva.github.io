@@ -33,20 +33,38 @@
     <!-- Conteúdo Principal -->
     <main>
         <!-- Sessão de Apresentação -->
-        <section id="apresentation" class="fhs">
-            <article class="ap principal">
+        <section id="apresentacao" class="flex-container">
+            <article class="ap-principal flex-container">
                 <h3 class="subtitulo">Olá, meu nome é</h3>
                 <div id="titulo">
                     <h2><span>Matheo Henrique</span></h2>
-                    <h2>Frase de efeito!</h2>
+                    <h2 id="frase">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam dolorum vitae minus nobis distinctio molestiae quod! Amet doloribus dignissimos nulla, velit natus ratione. Quod odio eius quibusdam quasi <span>consequuntur.</span></p>
-                <div>
-                    <a href="#" class="btn btn-primary">Entrar em Contato</a>
+                <div class="btn-container">
+                    <button>
+                        <div class="svg-pai">
+                            <div class="svg-filho">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                width="24"
+                                height="24"
+                            >
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path
+                                fill="currentColor"
+                                d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"
+                                ></path>
+                            </svg>
+                            </div>
+                        </div>
+                        <span>Entre em contato!</span>
+                    </button>
                 </div>
             </article>
-            <article class="ap secundario">
-                <img src="" alt="teste 01">
+            <article class="ap-secundario flex-container teste">
+                <img src="img/my-image.png" alt="Minha Foto">
             </article>
         </section><!-- Fim da Sessão Apresentação -->
         <!-- Sessão de Projetos -->

@@ -26,7 +26,6 @@
 
 html, body {
     height: 100%;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 
@@ -67,8 +66,13 @@ body {
     background: var(--color-background-primary);
     background: linear-gradient(95deg,var(--color-background-primary) 0%,
     var(--color-background-light) 100%);
-    margin: 12rem 6rem 6rem 6rem;
     font-family: var(--font-text-area);
+}
+
+main {
+    padding-top: 3rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 /* Fim - Gerais */
 
@@ -90,7 +94,7 @@ header {
     background: var(--color-background-primary);
     background: linear-gradient(95deg,var(--color-background-primary) 0%,
     var(--color-background-light) 100%);
-    padding: 6rem 6rem 1rem 6rem;
+    padding: 4rem 6rem 1rem 6rem;
 }& nav ul {
      gap: 4rem;
      color: var(--color-logo-primary);
@@ -164,17 +168,11 @@ header nav ul li .efeito-head-menu:hover {
 /* Fim - Header */
 
 /* SEÇÃO APRESENTAÇÃO */
-section {
+main #apresentacao {
     height: 100vh;
     width: 100%;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
-main #apresentacao {
     align-items: center;
     gap: 7rem;
-    padding-top: 10rem;
 }& #apresentacao article.ap-principal {
     max-width: 60%;
     flex-direction: column;
@@ -271,4 +269,11 @@ button:active {
 }
 
 @keyframes animacao-img{0%,100%{transform:translateY(0) rotate(0);transform-origin:50% 50%}15%{transform:translateY(-30px) rotate(6deg)}30%{transform:translateY(15px) rotate(-6deg)}45%{transform:translateY(-15px) rotate(3.6deg)}60%{transform:translateY(9px) rotate(-2.4deg)}75%{transform:translateY(-6px) rotate(1.2deg)}}
-/* Fim - SEÇÃO APRESENTAÇÃO */
+/* FIM - SEÇÃO APRESENTAÇÃO */
+
+/* SEÇÃO PROJETOS */
+main section#projects {
+    align-items: center;
+    gap: 7rem;
+}
+/* FIM - SEÇÃO PROJETOS */

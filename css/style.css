@@ -14,6 +14,7 @@
     --color-destaque-primary: #F44336;
     --color-destaque-light: #1D4859;
     --color-logo-primary: #3A75B4;
+    --color-logo-primary-opa: rgba(58, 117, 180, 0.500);
     --color-logo-secundary: #FFC300;
     --color-logo-destaque: #00FFFF;
 }
@@ -178,7 +179,7 @@ main #apresentacao {
     flex-direction: column;
     gap: 3.5rem;
     justify-content: space-around;
-}& .ap-principal h3.subtitulo {
+}& .subtitulo {
     color: var(--color-logo-primary);
     font-family: var(--font-text-code);
     font-size: 1.5rem;
@@ -196,8 +197,8 @@ main #apresentacao {
 }& .ap-principal p {
     color: var(--color-logo-primary);
     font-family: var(--font-text-code);
-}& .ap-principal .btn-container button:hover {
-    box-shadow: 0px 0px 15px var(--color-logo-primary);
+}& .ap-principal .btn-container button.contate-me:hover {
+    box-shadow: 0px 0px 15px var(--color-logo-primary-opa);
 }& article.ap-secundario {
     max-width: 40%;
     flex-direction: row-reverse;
@@ -214,7 +215,7 @@ main #apresentacao {
     animation: animacao-img .8s both;
 }
 
-button {
+button.contate-me {
   font-family: inherit;
   font-size: 20px;
   background: var(--color-destaque-light);
@@ -230,31 +231,31 @@ button {
   cursor: pointer;
 }
 
-button span {
+button.contate-me span {
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
 }
 
-button svg {
+button.contate-me svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
-button:hover .svg-filho {
+button.contate-me:hover .svg-filho {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-button:hover svg {
+button.contate-me:hover svg {
   transform: translateX(4.8em) rotate(45deg) scale(1.1);
 }
 
-button:hover span {
+button.contate-me:hover span {
   transform: translateX(10em);
 }
 
-button:active {
+button.contate-me:active {
   transform: scale(0.95);
 }
 
@@ -273,7 +274,179 @@ button:active {
 
 /* SEÇÃO PROJETOS */
 main section#projects {
+    flex-direction: column;
     align-items: center;
     gap: 7rem;
+    padding-top: 4rem;
+}& div.subtitulo h2 {
+    position: relative;
+    display: inline-block; 
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.8rem;
+}& div.subtitulo h2:after {
+    content: "";
+    width: 5rem;
+    height: 0.3rem;
+    background-color: var(--color-logo-secundary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+    border-radius: 10px;
+}& section#projects div#cards {
+    gap: 4rem;
+    align-items: center;
+    text-align: center;
+}& div#cards article.card {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    align-items: center;
+    background-color: var(--color-logo-primary-opa);
+    border-radius: 300px 300px 20px 20px;
+    transition: 0.4s ease;
+    padding: 0rem 1rem 3rem 1em;
+}& div#cards article.card:hover {
+    background-color: var(--color-logo-destaque);
+    box-shadow: 1px 1px 15px 0.1px var(--color-logo-destaque);
+}& div#cards article.card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 40px;
+}& div#cards article.card h3{
+    color: var(--color-font-primary);
+    text-shadow: 1px 1px 5px var(--color-logo-destaque);
+}& div#cards article.card p {
+    color: var(--color-logo-destaque);
+    font-family: var(--font-text-code);
+}& div#cards article.card p:hover {
+    color: var(--color-background-light);/* Resolver texto que desaparece por causa do hover */
+}& div#cards article.card .tags {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}& .efeito-head-2 {
+    background-color: var(--color-logo-secundary);
+    border-radius: 20px;
+    padding: 0.5em;
+    font-size: 0.8em;
+    color: var(--color-font-primary);
+}& .btn-projects {
+    gap: 3rem;
+    align-items: center;
+}
+
+.repositorio {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.05em;
+  border-radius: 5em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, var(--color-logo-secundary), var(--color-background-light));
+  color: var(--color-font-light);
+  overflow: hidden;
+}
+
+.repositorio svg {
+  width: 2.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.repositorio span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.repositorio::before,
+.repositorio::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.repositorio::before {
+  content: "";
+  background: var(--color-font-primary);
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.repositorio:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.repositorio:active {
+  transform: scale(0.95);
+}
+
+.ver {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background-color: var(--color-font-primary);
+  color: var(--color-font-light);
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.ver__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--color-font-primary);
+  background-color: var(--color-font-light);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.ver:hover {
+  background: linear-gradient(to right, var(--color-logo-secundary), var(--color-background-light));
+}
+
+.ver:hover .ver__icon-wrapper {
+  color: var(--color-destaque-primary);
+}
+
+.ver__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.ver:hover .ver__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.ver:hover .ver__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
 }
 /* FIM - SEÇÃO PROJETOS */

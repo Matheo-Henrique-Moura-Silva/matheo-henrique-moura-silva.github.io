@@ -278,6 +278,7 @@ main section#projects {
     align-items: center;
     gap: 7rem;
     padding-top: 4rem;
+    padding-bottom: 5rem;
 }& div.subtitulo h2 {
     position: relative;
     display: inline-block; 
@@ -450,3 +451,131 @@ main section#projects {
   transform: translate(0);
 }
 /* FIM - SEÇÃO PROJETOS */
+
+/* SEÇÃO SOBRE MIM */
+main section#i-about {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}& #i-about #about-texts {
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}& #about-texts #resume {
+    text-align: center;
+    font-family: var(--font-text-code);
+    font-size: 1.5rem;
+    color: var(--color-logo-destaque);
+    word-spacing: 0.4em;
+}& #about-texts #tecnologias {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* From Uiverse.io by gagan-gv */ 
+.btn-tags {
+  display: block;
+  padding: 0.7em 1em;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: var(--color-logo-secundary);
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cube {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.cube .bg-top {
+  position: absolute;
+  height: 10px;
+  background: var(--color-logo-secundary);
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg, 0);
+  margin: 0;
+  transition: all 0.4s;
+}
+
+.cube .bg-top .bg-inner {
+  bottom: 0;
+}
+
+.cube .bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: var(--color-logo-secundary);
+  transition: all 0.4s;
+}
+
+.cube .bg-right {
+  position: absolute;
+  background: var(--color-logo-secundary);
+  top: -5px;
+  z-index: 0;
+  bottom: 5px;
+  width: 10px;
+  left: 100%;
+  transform: skew(0, -45deg);
+  transition: all 0.4s;
+}
+
+.cube .bg-right .bg-inner {
+  left: 0;
+}
+
+.cube .bg-inner {
+  background: var(--color-destaque-light);
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+}
+
+.cube .text {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.cube:hover .bg-inner {
+  background: var(--color-logo-secundary);
+  transition: all 0.4s;
+}
+
+.cube:hover .text {
+  color: var(--color-destaque-light);
+  transition: all 0.4s;
+}
+
+.cube:hover .bg-right,
+.cube:hover .bg,
+.cube:hover .bg-top {
+  background: var(--color-destaque-light);
+}
+
+.cube:active {
+  z-index: 9999;
+  animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(0.9);
+  }
+}
+/* FIM - SEÇÃO SOBRE MIM */

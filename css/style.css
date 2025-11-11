@@ -579,3 +579,115 @@ main section#i-about {
   }
 }
 /* FIM - SEÇÃO SOBRE MIM */
+/* SEÇÃO CONTATO */
+main #contate {
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}& section#contate div.flex-container {
+  gap: 7rem;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}& section#contate div.flex-container form.flex-container {
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1;
+}& section#contate div.flex-container article.flex-container {
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+  gap: 4rem;
+}& #falowme h3 {
+  font-size: 1.5rem;
+  color: var(--color-logo-secundary);
+}& #falowme p {
+  color: var(--color-logo-destaque);
+}
+
+.form__group {
+  position: relative;
+  padding: 20px 0 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--color-logo-secundary);
+  outline: 0;
+  font-size: 17px;
+  color: var(--color-font-light);
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 17px;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: var(--color-logo-secundary);
+  pointer-events: none;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(95deg, var(--color-logo-primary) 35%, var(--color-logo-destaque) 100%);
+  border-image-slice: 1;
+}
+
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: var(--color-logo-destaque);
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+textarea#msg {
+  min-height: 15rem;
+}
+/* FIM - SEÇÃO CONTATO */
+/* FOOTER */
+footer {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 1.2rem;
+  color: var(--color-logo-primary);
+}& hr {
+  border: none;
+  width: 100%;
+  background-color: var(--color-logo-secundary);
+  height: 0.1em;
+  opacity: 0.4;
+}
+/* FIM - FOOTER */

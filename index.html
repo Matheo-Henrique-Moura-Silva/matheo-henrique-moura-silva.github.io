@@ -701,34 +701,56 @@
             </div>
         </section><!-- Fim Sessão Tecnologias -->
         <!-- Sessão de Contato -->
-        <section id="contate" class="fhs">
-            <div>
-                <h2 class="subtitulo">Contate-Me</h2>
+        <section id="contate" class="flex-container">
+            <div class="subtitulo">
+                <h2>Contate-Me</h2>
             </div>
-            <div class="layout">
-                <form action="">
-                    <label for="name">Nome</label>
-                    <input type="text" name="" id="name">
-                    <label for="e-mail">Email</label>
-                    <input type="email" name="" id="e-mail">
-                    <label for="msg">Mensagem</label>
-                    <textarea name="" id="msg"></textarea>
-                    <input type="submit" value="Enviar Mensagem" id="btn-enviar2">
+            <div class="flex-container">
+                <form class="flex-container" action="">
+                    <div class="form__group field">
+                        <input type="text" class="form__field" placeholder="Nome" required="" id="nome">
+                        <label for="nome" class="form__label">Nome</label>
+                    </div>
+                    <div class="form__group field">
+                        <input type="email" class="form__field" placeholder="E-mail" required="" id="e-mail">
+                        <label for="e-mail" class="form__label">E-mail</label>
+                    </div>
+                    <div class="form__group field">
+                        <textarea type="text" class="form__field" placeholder="Mensagem" required="" id="msg"></textarea>
+                        <label for="msg" class="form__label">Mensagem</label>
+                    </div>
+                    <div class="btn-container">
+                        <button class="contate-me" type="submit">
+                            <div class="svg-pai">
+                                <div class="svg-filho">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                        fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Enviar Mensagem</span>
+                        </button>
+                    </div>
                 </form>
-                <article id="falowme">
+                <article class="flex-container" id="falowme">
                     <h3>Vamos conversar!</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sequi, repellat officia rem vitae autem eveniet</p>
-                    <div class="img-redes">
-                        <a href=""><img src="img/teste-01.png" alt="" class="efeito-head-2"></a>
-                        <a href=""><img src="img/teste-01.png" alt="" class="efeito-head-2"></a>
-                    </div>
                 </article>
             </div>
         </section><!-- Fim Sessão de Contato -->
     </main>
     <!-- Rodapé -->
-     <footer>
-        <h5>Matheo Henrique Moura Silva</h5>
+     <footer class="flex-container">
+        <hr></hr>
+        <h5>&copy; 2025, MATHEO HENRIQUE MOURA SILVA. Todos os direitos reservados.</h5>
      </footer>
 </body>
 </html>

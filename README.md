@@ -25,32 +25,22 @@ O site está publicado e pode ser acessado através do link abaixo:
 ## 📸 Preview
 
 > [!TIP]
-> ![Tela de INICIAL do sistema](01.png)
+> ![Tela de INICIAL do sistema](screenshots/01.png)
+> ![Tela de INICIAL do sistema](screenshots/02.png)
 
 ---
 
 ## 🛠️ Funcionalidades
 
-* [x] Design Responsivo (Desktop/Mobile).
 * [x] Seção de Projetos integrados.
-* [x] Formulário de contato ou links sociais.
-* [ ] Modo Escuro (Dark Mode) - *Em breve*.
-
----
-
-## 📈 Minhas Estatísticas
-
-<p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Matheo-Henrique-Moura-Silva&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Matheo-Henrique-Moura-Silva&layout=compact&langs_count=7&theme=dracula"/>
-</p>
+* [x] Formulário de contato ou links sociais - *Em breve*.
 
 ---
 
 ## 📫 Vamos nos conectar?
 
-[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/SEU-USUARIO-AQUI)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:seuemail@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheohenrique/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:henriquematheo@hotmail.com)
 
 ---
 Desenhado com ❤️ por [Matheo Henrique](https://github.com/Matheo-Henrique-Moura-Silva)

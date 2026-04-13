@@ -15,162 +15,634 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="flex-container">
         <h1 class="fx-hover-simples">
-            &lt; Matheo <span id="span-class-mh">class</span>=
-            <span id="span-value-mh">"Dev"</span> /&gt;
+            &lt;<span id="span-code-mh">Matheo</span>
+            <span id="span-class-mh">class</span>=<span id="span-value-mh">"Dev"</span>/&gt;
         </h1>
         <!-- Menu Superior -->
         <nav>
-            <ul>
-                <li><a class="efeito-head-menu" href="#">Inicío</a></li>
-                <li><a class="efeito-head-menu" href="#">Projetos</a></li>
-                <li><a class="efeito-head-menu" href="#">Sobre Mim</a></li>
-                <li><a class="efeito-head-menu" href="#">Contato</a></li>
+            <ul class="flex-container">
+                <li><a class="menu efeito-head-menu" href="#apresentacao">Inicío</a></li>
+                <li><a class="menu efeito-head-menu" href="#projects">Projetos</a></li>
+                <li><a class="menu efeito-head-menu" href="#i-about">Sobre Mim</a></li>
+                <li><a class="menu efeito-head-menu" href="#contate">Contato</a></li>
             </ul>
         </nav>
     </header>
     <!-- Conteúdo Principal -->
     <main>
         <!-- Sessão de Apresentação -->
-        <section id="apresentation" class="fhs">
-            <article class="ap principal">
+        <section id="apresentacao" class="flex-container">
+            <article class="ap-principal flex-container">
                 <h3 class="subtitulo">Olá, meu nome é</h3>
                 <div id="titulo">
                     <h2><span>Matheo Henrique</span></h2>
-                    <h2>Frase de efeito!</h2>
+                    <h2 id="frase">Sistemas de Informação</h2>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quisquam dolorum vitae minus nobis distinctio molestiae quod! Amet doloribus dignissimos nulla, velit natus ratione. Quod odio eius quibusdam quasi <span>consequuntur.</span></p>
-                <div>
-                    <a href="#" class="btn btn-primary">Entrar em Contato</a>
+                <p>Sou um desenvolvedor de software em formação apaixonado por tecnologia, focado em sistemas web. Tenho um grande interesse em Python e no framework Django, tecnologias que tenho utilizado para criar projetos acadêmicos e pessoais.</p>
+                <a href="#contate">
+                    <div class="btn-container">
+                        <button class="contate-me">
+                            <div class="svg-pai">
+                                <div class="svg-filho">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                        fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Entre em contato!</span>
+                        </button>
+                </a>
                 </div>
             </article>
-            <article class="ap secundario">
-                <img src="" alt="teste 01">
+            <article class="ap-secundario flex-container teste">
+                <img src="img/my-image.png" alt="Minha Foto">
             </article>
         </section><!-- Fim da Sessão Apresentação -->
         <!-- Sessão de Projetos -->
-        <section id="projects" class="fhs">
-            <div>
-                <h2 class="subtitulo">Meus Projetos</h2>
+        <section id="projects" class="flex-container">
+            <div class="subtitulo">
+                <h2>Meus Projetos</h2>
             </div>
-            <div id="cards">
-                <article class="card"><!-- Projeto 01 -->
-                    <img src="img/teste-01.png" alt="Capa projeto 01">
-                    <h3>Descrição do Projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique earum eos qui doloremque quisquam sint commodi quibusdam ipsam tempore, molestias itaque? Ratione odio omnis ipsa tempore nemo, nobis quod accusantium?</p>
-                    <div class="tags">
-                        <h4 class="efeito-head-2">Tags 01</h4>
-                        <h4 class="efeito-head-2">Tags 02</h4>
-                        <h4 class="efeito-head-2">Tags 03</h4>
-                        <h4 class="efeito-head-2">Tags 04</h4>
+            <div id="cards" class="flex-container">
+                <article class="card flex-container"><!-- Projeto 01 -->
+                    <img src="https://raw.githubusercontent.com/Matheo-Henrique-Moura-Silva/make-up-lab-ecommerce-django/refs/heads/main/screenshots/2.png" alt="Capa projeto 01">
+                    <h3>MakeUpLab | E-commerce</h3>
+                    <p> Plataforma de e-commerce completa para o segmento de beleza. O projeto oferece um painel de administração para gestão total de produtos (cadastro, edição, remoção) e uma experiência de compra rica para o usuário, que pode criar contas, gerenciar favoritos, utilizar o carrinho.</p>
+                    <div class="tags flex-container">
+                       <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Python</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Django</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">SQLite3</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">HTML5</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">CSS3</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">JavaScript</div>
+                        </button>
                     </div>
-                    <div class="btn-projects">
-                        <a href="#" class="btn btn-primary">Ver Projeto</a>
-                        <a href="#" class="btn btn-primary">GitHub</a>
+                    <div class="btn-projects flex-container">
+                        <button href="" class="ver">
+                        <span class="ver__icon-wrapper">
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg"
+                            width="10">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg ver__icon-svg--copy">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                        </span>
+                        <a href="https://www.linkedin.com/posts/matheohenrique_desenvolvimentoweb-python-django-activity-7377868968948129792-V3g-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6ylk0BG-fVl0Tk8m0tmkMQQGBUvUQagr0" target="_blank">Ver Projetos</a>
+                        </button>
+                        <button class="repositorio">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                                <a href="https://github.com/Matheo-Henrique-Moura-Silva/make-up-lab-ecommerce-django/tree/main" target="_blank">GitHub</a>
+                            </span>
+                        </button>
                     </div>
                 </article><!-- Fim Projeto 01 -->
-                <article class="card"><!-- Projeto 02 -->
-                    <img src="img/teste-01.png" alt="Capa projeto 01">
-                    <h3>Descrição do Projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique earum eos qui doloremque quisquam sint commodi quibusdam ipsam tempore, molestias itaque? Ratione odio omnis ipsa tempore nemo, nobis quod accusantium?</p>
-                    <div class="tags">
-                        <h4 class="efeito-head-2">Tags 01</h4>
-                        <h4 class="efeito-head-2">Tags 02</h4>
-                        <h4 class="efeito-head-2">Tags 03</h4>
-                        <h4 class="efeito-head-2">Tags 04</h4>
+                <article class="card flex-container"><!-- Projeto 02 -->
+                    <img src="img/img-meutube.png" alt="Capa projeto 01">
+                    <h3>MeuTube | Downloader</h3>
+                    <p>O MeuTube é um aplicativo web simples e eficiente desenvolvido em Django que permite aos usuários baixar vídeos do YouTube. Basta colar o link, e o sistema utiliza a poderosa biblioteca yt-dlp para buscar as resoluções disponíveis e facilitar o download.</p>
+                    <div class="tags flex-container">
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Python</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Django</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">HTML5</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">CSS3</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Git/Github</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">yt-dlp</div>
+                        </button>
                     </div>
-                    <div class="btn-projects">
-                        <a href="#" class="btn btn-primary">Ver Projeto</a>
-                        <a href="#" class="btn btn-primary">GitHub</a>
+                    <div class="btn-projects flex-container">
+                        <button href="#" class="ver">
+                        <span class="ver__icon-wrapper">
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg"
+                            width="10">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg ver__icon-svg--copy">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                        </span>
+                        Ver Projetos
+                        </button>
+                        <button class="repositorio">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                                <a href="https://github.com/Matheo-Henrique-Moura-Silva/baixador-video-youtube-django.git" target="_blank">GitHub</a>
+                            </span>
+                        </button>
                     </div>
                 </article><!-- Fim Projeto 02 -->
-                <article class="card"><!-- Projeto 03 -->
-                    <img src="img/teste-01.png" alt="Capa projeto 01">
-                    <h3>Descrição do Projeto</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique earum eos qui doloremque quisquam sint commodi quibusdam ipsam tempore, molestias itaque? Ratione odio omnis ipsa tempore nemo, nobis quod accusantium?</p>
-                    <div class="tags">
-                        <h4 class="efeito-head-2">Tags 01</h4>
-                        <h4 class="efeito-head-2">Tags 02</h4>
-                        <h4 class="efeito-head-2">Tags 03</h4>
-                        <h4 class="efeito-head-2">Tags 04</h4>
+                <article class="card flex-container"><!-- Projeto 03 -->
+                    <img src="img/img-klperfume.png" alt="Capa projeto 01">
+                    <h3>KL_PERFUME | ERP</h3>
+                    <p>O KL_PERFUME é um sistema web simples e eficiente para o controle e gerenciamento de vendas de cosméticos. Desenvolvido para facilitar a gestão do negócio, o sistema permite que o usuário gerencie produtos, clientes e vendas de forma organizada, além de fornecer uma visão analítica do desempenho por meio de painéis e gráficos interativos</p>
+                    <div class="tags flex-container">
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Python</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Django</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">HTML5</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">CSS3</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Bootstrap</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">Anychart</div>
+                        </button>
+                        <button class="btn-tags cube cube-hover" type="button">
+                            <div class="bg-top">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg-right">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="bg">
+                                <div class="bg-inner"></div>
+                            </div>
+                            <div class="text">SQLite3</div>
+                        </button>
                     </div>
-                    <div class="btn-projects">
-                        <a href="#" class="btn btn-primary">Ver Projeto</a>
-                        <a href="#" class="btn btn-primary">GitHub</a>
+                    <div class="btn-projects flex-container">
+                        <button href="#" class="ver">
+                        <span class="ver__icon-wrapper">
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg"
+                            width="10">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                            <svg
+                            viewBox="0 0 14 15"
+                            fill="none"
+                            width="10"
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="ver__icon-svg ver__icon-svg--copy">
+                                <path
+                                    d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+                                    fill="currentColor">
+                                </path>
+                            </svg>
+                        </span><a href="https://www.linkedin.com/posts/matheohenrique_imagens-do-sistema-activity-7394575761602416640-sVEf?utm_source=share&utm_medium=member_desktop&rcm=ACoAAF6ylk0BG-fVl0Tk8m0tmkMQQGBUvUQagr0" target="_blank">Ver Projetos</a>
+                        </button>
+                        <button class="repositorio">
+                            <span>
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path
+                                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                                <a href="https://github.com/Matheo-Henrique-Moura-Silva/gestao-produtos-vendas-v01-django.git" target="_blank">GitHub</a>
+                            </span>
+                        </button>
                     </div>
                 </article><!-- Fim Projeto 03 -->
             </div>
         </section>
         <!-- Sessão de Tecnologias -->
-        <section id="i-about" class="fhs">
-            <div>
-                <h2 class="subtitulo">Sobre Mim</h2>
+        <section id="i-about" class="flex-container">
+            <div class="subtitulo">
+                <h2>Sobre Mim</h2>
             </div>
-            <div id="layout">
-                <div id="about-texts">
-                    <article id="resume">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius eum nesciunt repudiandae alias voluptatibus optio corrupti vitae, vero eos enim similique amet ratione quisquam animi aliquam fuga molestias suscipit. Laudantium!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aut dolore at et, explicabo dignissimos aperiam quia rem voluptatibus eius.</p>
-                    </article>
-                    <article id="tecnologias">
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                        <h4 class="efeito-head-2">XXXX</h4>
-                    </article>
-                </div>
-                <div id="about-img">
-                    <img src="img/teste-01.png" alt="AAAAA">
-                </div>
+            <div id="about-texts" class="flex-container">
+                <article id="resume">
+                    <p>Sou um desenvolvedor de software em formação, focado em sistemas web. Tenho um grande interesse em Python e no framework Django, tecnologias que tenho utilizado para criar projetos acadêmicos e pessoais.
+
+                    Com conhecimento em desenvolvimento back-end, minhas habilidades incluem:
+
+                    - Python e Django.
+
+                    - HTML, CSS.
+
+                    - Versionamento de código com Git.
+
+                    Além das habilidades técnicas, sou uma pessoa proativa e focado, com forte capacidade de resolução de problemas e muita vontade de aprender. Meu objetivo é aplicar meu conhecimento em um ambiente profissional, colaborando com uma equipe para construir soluções de impacto.
+
+                    Estou ativamente buscando uma oportunidade de emprego júnior para iniciar minha carreira. Sinta-se à vontade para entrar em contato ou se conectar comigo para saber como posso contribuir para o seu time.</p>
+                </article>
+                <article id="tecnologias" class="flex-container">
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">Python</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">Django</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">HTML5</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">CSS3</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">Bootstrap</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">GIT/GITHUB</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">Kyvi</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">UML</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">JavaScript</div>
+                    </button>
+                    <button class="btn-tags cube cube-hover" type="button">
+                        <div class="bg-top">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg-right">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="bg">
+                            <div class="bg-inner"></div>
+                        </div>
+                        <div class="text">SQLITE3</div>
+                    </button>
+                </article>
             </div>
         </section><!-- Fim Sessão Tecnologias -->
         <!-- Sessão de Contato -->
-        <section id="contate" class="fhs">
-            <div>
-                <h2 class="subtitulo">Contate-Me</h2>
+        <section id="contate" class="flex-container">
+            <div class="subtitulo">
+                <h2>Contate-Me</h2>
             </div>
-            <div class="layout">
-                <form action="">
-                    <label for="name">Nome</label>
-                    <input type="text" name="" id="name">
-                    <label for="e-mail">Email</label>
-                    <input type="email" name="" id="e-mail">
-                    <label for="msg">Mensagem</label>
-                    <textarea name="" id="msg"></textarea>
-                    <input type="submit" value="Enviar Mensagem" id="btn-enviar2">
-                </form>
-                <article id="falowme">
-                    <h3>Vamos conversar!</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sequi, repellat officia rem vitae autem eveniet</p>
-                    <div class="img-redes">
-                        <a href=""><img src="img/teste-01.png" alt="" class="efeito-head-2"></a>
-                        <a href=""><img src="img/teste-01.png" alt="" class="efeito-head-2"></a>
+            <div class="flex-container">
+                <form class="flex-container" action="">
+                    <div class="form__group field">
+                        <input type="text" class="form__field" placeholder="Nome" required="" id="nome">
+                        <label for="nome" class="form__label">Nome</label>
                     </div>
+                    <div class="form__group field">
+                        <input type="email" class="form__field" placeholder="E-mail" required="" id="e-mail">
+                        <label for="e-mail" class="form__label">E-mail</label>
+                    </div>
+                    <div class="form__group field">
+                        <textarea type="text" class="form__field" placeholder="Mensagem" required="" id="msg"></textarea>
+                        <label for="msg" class="form__label">Mensagem</label>
+                    </div>
+                    <div class="btn-container">
+                        <button class="contate-me" type="submit">
+                            <div class="svg-pai">
+                                <div class="svg-filho">
+                                    <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                        fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Enviar Mensagem</span>
+                        </button>
+                    </div>
+                </form>
+                <article class="flex-container" id="falowme">
+                    <h3>Vamos conversar!</h3>
+                    <p>OBS: Ainda estou trabalhando para deixar hospedar meu portfólio em uma plataforma confiavel para implemetar esse formulário. Espero que compreenda mas meus contatos estão aqui: EMAIL: henriquematheo@hotmail.com | CELULAR: (47) 9 99606784.</p>
                 </article>
             </div>
         </section><!-- Fim Sessão de Contato -->
     </main>
     <!-- Rodapé -->
-     <footer>
-        <h5>Matheo Henrique Moura Silva</h5>
+     <footer class="flex-container">
+        <hr></hr>
+        <h5>&copy; 2025, MATHEO HENRIQUE MOURA SILVA. Todos os direitos reservados.</h5>
      </footer>
 </body>
 </html>
